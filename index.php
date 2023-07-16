@@ -40,4 +40,4 @@ require_once "./autoload.php";
 // $one->showName();
 
 $queryBuilder = new QueryBuilder("doubtMen");
-print_r($queryBuilder->where("id","=",3)->orWhere("id","=",4)->sql());
+print_r($queryBuilder->where("id","=",3)->orWhere("id","=",4)->order("name","DESC")->sql());
