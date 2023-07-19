@@ -1,4 +1,9 @@
 <?php
+
+use HTML\Form;
+use HTML\Form\Button;
+use HTML\Table;
+
 system("clear");
 require_once "./autoload.php";
 
@@ -39,5 +44,18 @@ require_once "./autoload.php";
 // $one = new One;
 // $one->showName();
 
-$queryBuilder = new QueryBuilder("doubtMen");
-print_r($queryBuilder->where("id","=",3)->orWhere("id","=",4)->order("name","DESC")->sql());
+// $queryBuilder = new QueryBuilder("doubtMen");
+// print_r($queryBuilder->where("id","=",3)->orWhere("id","=",4)->order("name","DESC")->sql());
+
+// $kyaw = new Person;
+// $kyaw->setFbPassword("0000");
+// $kyaw -> getFbPassword();
+
+// $table = new Table;
+// var_dump($table->tableFun());
+
+// $form = new Form;
+// var_dump($form->formFun());
+
+// $button = new Button;
+// var_dump($button->btnFun());
